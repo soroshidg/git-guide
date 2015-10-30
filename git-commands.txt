@@ -1,0 +1,19 @@
+
+
+GIT Command
+
+git config --global user.name "soroshidg"
+
+git init
+
+vi readme.txt
+
+git add "*.txt" or git add readme.txt  OR git add --all OR git add README.txt file1.txt
+
+git status
+
+git commit -m "adding file"
+
+git log
+
+
