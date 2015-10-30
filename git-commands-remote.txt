@@ -1,0 +1,84 @@
+git clone https://github.com/mongodb/mongodb.git
+
+cd mongodb
+
+git log
+
+git log --oneline 
+
+git log -- oneline |wc -l
+
+git log --oneline --graph --decorate
+
+git shortlog
+
+git shortlog -sne (summary , numerically decreasing, e-email)
+
+git show HEAD~1
+
+git show SHA1
+
+__________________________________________
+
+git remote
+
+git remote -v
+
+--------------------------
+BRANCHS
+
+git branch
+
+git branch -r
+
+-------
+
+git remote add origin "repo"
+
+git fetch
+
+git fetch "repo"
+
+____________________
+
+
+git log origin/master
+
+git merge origin/master
+
+git pull (fetch + merge)
+
+git pull origin master
+
+-------------------------
+
+git push origin master
+
+git remote rm origin
+
+git remote -v
+
+git remote add origin git@github.com:soroshidg/abcd.git
+(SSH uses auth key, will not ask for password)
+
+------------------------
+
+
+git tag v1.0
+
+git tag
+
+git tag -a v1.0_with message
+
+git tag -s v1.0_signed (signed)
+
+git tag -v v1.0_with_message
+
+git tag -v v1.0_signed
+
+git push --tags
+
+______________________
+
+
+
