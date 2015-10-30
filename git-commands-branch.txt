@@ -1,0 +1,116 @@
+git log --graph --oneline
+
+
+git config --global alias.lga "log --graph --oneline --add --decorate"
+
+git lga
+
+cat ~/gitconfig
+
+_________________________
+
+
+git branch "br1"
+
+git checkout "br1"
+
+git lga
+
+echo feature1 >> README.txt
+
+----------------
+git branch fix1 SHA
+
+git checkout fix1
+
+------------------
+
+git checkout master
+
+----RENAMING A BRNACH
+git branch -m fix1 bug1234
+
+---DELETING A BRANCH
+
+git branch -d bug1234
+
+git branch -D bug1234 (force deletion)
+
+
+git checkout -b feature2
+
+---------UNDO DELETE
+
+
+git reflog
+
+git branch bug1234 SHA
+
+git checkout bug1234
+
+git show HEAD
+
+_________________________________
+
+(temporary holding area)
+git stash
+
+git stash lists
+
+git stash apply
+
+git reset --hard HEAD
+
+git stash pop (remove from stash list)
+
+git stash drop
+
+git stash branch "additional"
+
+______________________________________
+
+git merge feature1
+
+git branch feature1
+
+git merge feature2 (supose has merge conflict)
+
+git mergetool
+
+git diff --cached
+
+git commit -m "merge"
+
+________________________________
+
+git rebase master
+
+git chekout master
+
+git merge feature3
+
+git rebase --continue
+
+______________________________
+
+
+cherry picking
+
+git checkout master
+
+git cherry-pick SHA
+git lga
+
+git merge v1.0fixes
+
+____________________________
+DELETE BRANCH
+
+git push origin v1.0:v2.0
+
+git push origin :v2.0
+
+
+
+
+
